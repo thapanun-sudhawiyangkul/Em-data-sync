@@ -1,0 +1,26 @@
+# --- secrets: never commit ---
+config.json
+legacy/config_v1.json
+installer/
+EmbroiSync_Setup.zip
+*.env
+
+# --- production machine data (private) ---
+Data/
+*.MDF
+*.LDF
+*.mdf
+*.ldf
+
+# --- operational notes with account / address details (kept local) ---
+hand-off.md
+PUBLIC-ACCESS.md
+
+# --- runtime output ---
+staging/
+logs/
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec

@@ -1,0 +1,27 @@
+{
+  "_help": "data_dir = the folder that holds the machines' .MDF files (NAS share or local). Every .MDF in it is one machine. Relative paths are relative to this script folder.",
+  "data_dir": "\\\\MYNAS\\embroidery\\logs",
+  "_data_dir_examples": [
+    "\\\\MYNAS\\embroidery\\logs",
+    "Z:\\embroidery\\logs",
+    "Data\\24"
+  ],
+  "file_pattern": "*.MDF",
+  "exclude": [],
+  "supabase": {
+    "_help": "Dashboard > Project Settings > API Keys. Use the secret key (sb_secret_...). Keep it on this PC only.",
+    "url": "https://YOUR-PROJECT-REF.supabase.co",
+    "key": "YOUR-SECRET-KEY",
+    "table": "passport_log",
+    "state_table": "passport_sync_state",
+    "run_table": "passport_sync_run",
+    "batch_size": 1000
+  },
+  "overlap_rows": 5,
+  "interval_minutes": 60,
+  "staging_dir": "staging",
+  "keep_copies": 2,
+  "copy_retries": 3,
+  "copy_retry_seconds": 20,
+  "log_dir": "logs"
+}
